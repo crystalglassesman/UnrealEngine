@@ -35,10 +35,14 @@ so these are the folders/files to keep
 #### Safe to delete
 
 - .vs
+- .vscode
 - Binaries
 - Build
 - DerivedDataCache
 - Intermediate
+- Plugin/**/Binaries
+- Plugin/**/Build
+- Plugin/**/Intermediate
 - Saved/Autosaves
 - Saved/Collections
 - Saved/Cooked
@@ -52,12 +56,6 @@ so these are the folders/files to keep
 - Saved/Temp
 - Saved/webcache_*
 - Saved/WorldPartition
-
-Plugin
-
-- Plugin/Binaries
-- Plugin/Build
-- Plugin/Intermediate
 
 | Folder Path              | Category          | Notes                                  | Tags                                      |
 | ------------------------ | ----------------- | -------------------------------------- | ----------------------------------------- |
