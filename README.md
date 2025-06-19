@@ -1,24 +1,28 @@
+# Unreal Engine Project Documentation & Tools
 
-# Table of Content
+![GitHub last commit](https://img.shields.io/github/last-commit/crystalglassesman/UnrealEngine-VisualStudio-Documentation?style=flat-square)
 
-- [Table of Content](#table-of-content)
-  - [Unreal File Structure](#unreal-file-structure)
-    - [Unreal can create your project from](#unreal-can-create-your-project-from)
-    - [Safe to delete:](#safe-to-delete)
-    - [Clean Project directory using batch File](#clean-project-directory-using-batch-file)
+- [Unreal Engine Project Documentation \& Tools](#unreal-engine-project-documentation--tools)
+  - [Unreal Engine File Structure](#unreal-engine-file-structure)
+    - [Unreal Engine Project](#unreal-engine-project)
+      - [Unreal can create your project from](#unreal-can-create-your-project-from)
+      - [Safe to delete](#safe-to-delete)
+      - [Clean Project directory using batch File](#clean-project-directory-using-batch-file)
   - [Visual Studio](#visual-studio)
     - [Visual Studio Setup](#visual-studio-setup)
     - [.gitingore](#gitingore)
     - [Error code (Use Ctrl+F)](#error-code-use-ctrlf)
+      - [MSB3073](#msb3073)
       - [MSB3073 code 6](#msb3073-code-6)
       - [MSB3073 code 8](#msb3073-code-8)
-      - [MSB3073](#msb3073)
       - [E0070](#e0070)
       - [E1696 cannot open source file](#e1696-cannot-open-source-file)
 
-## Unreal File Structure
+## Unreal Engine File Structure
 
-### Unreal can create your project from
+### Unreal Engine Project
+
+#### Unreal can create your project from
 
 - Config
 - Content
@@ -28,11 +32,12 @@
 
 so these are the folders/files to keep
 
-### Safe to delete:
+#### Safe to delete
 
 - .vs
 - Binaries
 - Build
+- DerivedDataCache
 - Intermediate
 - Saved/Autosaves
 - Saved/Collections
@@ -45,7 +50,13 @@ so these are the folders/files to keep
 - Saved/StagedBuilds
 - Saved/Temp
 - Saved/webcache_4147
-- Saved/ .tmp files
+- Saved/.tmp files  
+
+Plugin
+
+- Plugin/Binaries
+- Plugin/Build
+- Plugin/Intermediate
 
 [UE项目最佳实践：目录结构与常用脚本 - 知乎](https://zhuanlan.zhihu.com/p/7406207435)
 
@@ -59,7 +70,7 @@ so these are the folders/files to keep
 
 [Can i delete the intermediate folder? : r/unrealengine](https://www.reddit.com/r/unrealengine/comments/9xaiix/can_i_delete_the_intermediate_folder/)
 
-### Clean Project directory using batch File
+#### Clean Project directory using batch File
 
 ```bat
 @echo off
@@ -211,6 +222,14 @@ DerivedDataCache/*
 
 ### Error code (Use Ctrl+F)
 
+#### MSB3073
+
+- MSB3073
+
+[Error Code MSB3073 when I compile - Programming & Scripting / C++ - Epic Developer Community Forums](https://forums.unrealengine.com/t/error-code-msb3073-when-i-compile/1333355/3)
+
+[ue 编译问题 Error MSB3073\_ue5.1.1适用的mscv编译器版本-CSDN博客](https://blog.csdn.net/opk8848/article/details/128417456)
+
 #### MSB3073 code 6
 
 - MSB3073 code 6: .uproject > Set VisualStudioTools to "Enabled": false
@@ -222,14 +241,6 @@ DerivedDataCache/*
 #### MSB3073 code 8
 
 - MSB3073 code 8: .uproject > Set VisualStudioTools to "Enabled": false
-
-#### MSB3073
-
-- MSB3073
-
-[Error Code MSB3073 when I compile - Programming & Scripting / C++ - Epic Developer Community Forums](https://forums.unrealengine.com/t/error-code-msb3073-when-i-compile/1333355/3)
-
-[ue 编译问题 Error MSB3073\_ue5.1.1适用的mscv编译器版本-CSDN博客](https://blog.csdn.net/opk8848/article/details/128417456)
 
 #### E0070
 
